@@ -7847,19 +7847,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fefed\\.nuget\\packages\\": {}
+    "C:\\Users\\Sárközi Erik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fefed\\source\\repos\\Csharp\\Lib.Api\\Lib.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
       "projectName": "Lib.Api",
-      "projectPath": "C:\\Users\\fefed\\source\\repos\\Csharp\\Lib.Api\\Lib.Api.csproj",
-      "packagesPath": "C:\\Users\\fefed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fefed\\source\\repos\\Csharp\\Lib.Api\\obj\\",
+      "projectPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+      "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fefed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
