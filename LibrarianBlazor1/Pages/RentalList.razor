@@ -22,10 +22,9 @@ else
             @foreach (var person in rentals)
             {
                 <tr>
-                    <td>@person.Member.Name</td>
-                    <td>@person.Member.Address</td>
-                    <td>@person.Member.YearOfBirth</td>
-                    <td><a href="person/@person.Id">Details</a></td>
+                    <td>@person.Book.Title</td>
+                    <td>@person.DateOfRental</td>
+                    <td>@person.ReturnDate</td>
                 </tr>
             }
         </tbody>

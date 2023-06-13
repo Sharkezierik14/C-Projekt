@@ -10,11 +10,18 @@ namespace LibrarianBlazor1.Services
         {
             _httpClient = httpClient;
         }
+
+        public Task<Rental?> AddRentalAsync(int bookId, int MemberId)
+        {
+            
+        }
+
         public Task<IEnumerable<Rental>?> GetAllRentalAsync() =>
 
         _httpClient.GetFromJsonAsync<IEnumerable<Rental>>("Rentals");
 
-        public Task<Rental?> GetRentalByPersonId(int id) =>
+        public Task<Rental?> GetRentalByRentalId(int id) =>
             _httpClient.GetFromJsonAsync<Rental?>($"Rentals/{id}");
+
     }
 }

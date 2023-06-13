@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\LibrarianBlazor1",
-    "\\LibrarianBlazor1\\Pages"
+    "\\LibrarianBlazor1\\Pages",
+    "\\LibrarianBlazor1\\Services"
   ],
-  "SelectedNode": "\\LibrarianBlazor1\\Pages\\PeopleList.razor",
+  "SelectedNode": "\\LibrarianBlazor1\\Pages\\BooksDetails.razor",
   "PreviewInSolutionExplorer": false
 }

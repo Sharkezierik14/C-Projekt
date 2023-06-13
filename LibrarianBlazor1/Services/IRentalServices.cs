@@ -7,7 +7,10 @@ namespace LibrarianBlazor1.Services
     {
         Task<IEnumerable<Rental>?> GetAllRentalAsync();
 
-        Task<Rental?> GetRentalByPersonId(int id);
+        Task<Rental?> GetRentalByRentalId(int id);
+
+        Task<Rental?> AddRentalAsync(int bookId, int MemberId);    
+
 
     }
 }
