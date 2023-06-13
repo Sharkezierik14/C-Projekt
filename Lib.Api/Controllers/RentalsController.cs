@@ -43,7 +43,7 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(int memberId, int bookId)
+        public async Task<IActionResult> Post(int memberId, int bookId, int days)
         {
             var member = await _context.Members.FirstOrDefaultAsync(m => m.Id == memberId);
             var book = await _context.Books.FirstOrDefaultAsync(b => b.Id == bookId);
@@ -58,7 +58,7 @@
                 MemberId = memberId,
                 BookId = bookId,
                 DateOfRental = DateTime.Now,
-                ReturnDate = DateTime.Now.AddDays(14) // Assuming a 14-day rental period
+                ReturnDate = DateTime.Now.AddDays(days) // Assuming a 14-day rental period
             };
 
             _context.Rentals.Add(rental);

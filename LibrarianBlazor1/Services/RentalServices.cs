@@ -13,7 +13,7 @@ namespace LibrarianBlazor1.Services
 
         public Task<Rental?> AddRentalAsync(int bookId, int MemberId)
         {
-            
+            return null;
         }
 
         public Task<IEnumerable<Rental>?> GetAllRentalAsync() =>
