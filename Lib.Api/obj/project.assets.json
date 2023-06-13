@@ -2567,6 +2567,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contracts.dll": {}
+        }
       }
     }
   },
@@ -7833,10 +7843,16 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Contracts/Contracts.csproj",
+      "msbuildProject": "../Contracts/Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Contracts >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.16",
       "Microsoft.EntityFrameworkCore.Proxies >= 6.0.16",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.16",
@@ -7852,11 +7868,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
       "projectName": "Lib.Api",
-      "projectPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+      "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
       "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\obj\\",
+      "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7873,7 +7889,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

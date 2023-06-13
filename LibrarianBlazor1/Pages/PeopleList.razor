@@ -1,0 +1,43 @@
+﻿@page "/"
+@using Contracts;
+@using Services
+@inject IPersonServices PersonServices
+@if (Members is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>People List</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>YearOfBirth</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Members)
+            {
+                <tr>
+                    <td>@person.Name</td>
+                    <td>@person.Address</td>
+                    <td>@person.YearOfBirth</td>
+                    <td><a href="person/@person.Id">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<h3>Members</h3>
+
+@code {
+    private IEnumerable<Member>? Members { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Members = await PersonServices.GetAllPeopleAsync();
+    }
+}

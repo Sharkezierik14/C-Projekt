@@ -1,17 +1,72 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj": {}
+    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj": {
+    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
-        "projectName": "Lib.Api",
-        "projectPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\obj\\",
+        "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+        "projectName": "Lib.Api",
+        "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+        "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,7 +83,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

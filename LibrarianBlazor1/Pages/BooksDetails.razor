@@ -1,0 +1,41 @@
+﻿@page "/books/{id:int}"
+@using Contracts
+@using Services
+@inject IBookServices BookServices
+@inject IRentalServices RentalServices
+@if (Books is null){
+    <p>Loading...</p>
+}
+else
+{
+    foreach(var rental in rentals)
+    {
+        if (rental.BookId == Id)
+        {
+            <p>@Books.Title: Ki van kölcsönözve </p>
+            <p>Kölcsönző személy: @rental.Member.Name</p>
+            <p>Vissza kell hozni ekkora: @rental.ReturnDate</p>
+            break;
+        }
+    }
+    @if (!rentals.Any(rental => rental.BookId == Id))
+    {
+        <p>Nincs ki kölcsönözve</p>
+    }
+}
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    private Book? Books { get; set; }
+    private IEnumerable<Rental>? rentals { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await BookServices.GetBookByIdAsync(Id);
+        rentals = await RentalServices.GetAllRentalAsync();
+    }
+
+}

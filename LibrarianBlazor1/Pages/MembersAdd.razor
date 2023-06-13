@@ -1,0 +1,36 @@
+﻿@page "/person/add"
+@using Contracts
+@using Services
+@inject IPersonServices PersonServices
+@inject NavigationManager NavigationManager
+<h3>Add person</h3>
+
+<EditForm Model="@Members" OnValidSubmit="@HandleValidSubmitAsync">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <InputText @bind-Value="@Members.Name" class=" form-control"></InputText>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <InputText @bind-Value="@Members.Address" class=" form-control"></InputText>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">YearOfBirth</label>
+        <InputNumber @bind-Value="@Members.YearOfBirth" class=" form-control"></InputNumber>
+    </div>
+    <button type="submit" class="btn btn-primary form-control">Add</button>
+</EditForm>
+
+@code {
+    private Member Members { get; set; } = new();
+
+    private async Task HandleValidSubmitAsync()
+    {
+        await PersonServices.AddpersonAsync(Members);
+        NavigationManager.NavigateTo("/");
+    }
+
+}

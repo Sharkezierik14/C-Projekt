@@ -1,4 +1,5 @@
-﻿namespace Lib.Api
+﻿using Contracts;
+namespace Lib.Api
 {
     using Microsoft.EntityFrameworkCore;
 

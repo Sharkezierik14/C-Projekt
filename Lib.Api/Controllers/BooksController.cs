@@ -1,5 +1,6 @@
 ﻿namespace Library.Controllers
 {
+    using Contracts;
     using Lib.Api;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;

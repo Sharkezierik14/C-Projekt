@@ -1,0 +1,45 @@
+﻿@page "/Books"
+@using Contracts;
+@using Services
+@inject IPersonServices PersonServices
+@inject IBookServices BookServices
+@if (Books is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>Books List</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>YearOfPublication</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Publisher</td>
+                    <td>@book.YearOfPublication</td>
+                    <td><a href="books/@book.Id">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Book>? Books { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await BookServices.GetAllBookAsync();
+    }
+}

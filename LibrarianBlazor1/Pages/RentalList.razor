@@ -1,0 +1,43 @@
+﻿@page "/rental"
+@using Contracts;
+@using Services
+@inject IRentalServices RentalService
+@if (rentals is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>People List</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>YearOfBirth</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in rentals)
+            {
+                <tr>
+                    <td>@person.Member.Name</td>
+                    <td>@person.Member.Address</td>
+                    <td>@person.Member.YearOfBirth</td>
+                    <td><a href="person/@person.Id">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<h3>Members</h3>
+
+@code {
+    private IEnumerable<Rental>? rentals { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        rentals = await RentalService.GetAllRentalAsync();
+    }
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zCcF/LPQnzSwOVOSA5LDsxaE8RulNfqy6Hboji5oh8p01+NaX9v26z5yttlhN7tiFKaeAjXvD94M/1Z6tlrZAQ==",
+  "dgSpecHash": "PzF02ID9wr0UwnDo1+h/17fkeavyNgSN5AtWmMVTjkONEjUXdgqdpG9blRaREUml/MBDhR0AWY/ACs5x5IyS5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sárközi Erik\\Source\\Repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
+  "projectFilePath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Lib.Api\\Lib.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
