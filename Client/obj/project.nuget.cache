@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6h2J25KU5jeXBRXC2iEtuOepiErg/qm6YnIu9SPp98Xvia/wu4bNXdX1ghQrl2lge2zz2dPRWIBGzzW8mOVL7w==",
+  "dgSpecHash": "OvrrcQ5H8dvRMWFdaP8uQW0511X0O7o2ZnL6X8fNBElESmjFmN3Zn6ekvhU/iuhZVQd1v5eTxTcnc6LGd+fMxg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\microsoft.jsinterop\\6.0.15\\microsoft.jsinterop.6.0.15.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.15\\microsoft.jsinterop.webassembly.6.0.15.nupkg.sha512",
+    "C:\\Users\\Sárközi Erik\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\Sárközi Erik\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
