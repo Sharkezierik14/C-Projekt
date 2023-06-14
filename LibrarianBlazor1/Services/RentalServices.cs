@@ -28,6 +28,9 @@ namespace LibrarianBlazor1.Services
             }
         }
 
+        public async Task DeleteRentalAsync(int id) =>
+            await _httpClient.DeleteAsync($"Rentals/{id}");
+
         public Task<IEnumerable<Rental>?> GetAllRentalAsync() =>
 
         _httpClient.GetFromJsonAsync<IEnumerable<Rental>>("Rentals");

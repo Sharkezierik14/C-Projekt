@@ -51,7 +51,7 @@
                                 {
                                     <td>@rental.ReturnDate.ToShortDateString()</td>
                                 }
-                                <td><button @onclick="@HandleDeleteRentalAsync" class="btn btn-danger form-control">Kölcsönzés Törlése</button></td>
+                                <td><button @onclick="() => HandleDeleteRentalAsync(rental.Id)" class="btn btn-danger form-control">Kölcsönzés Törlése</button></td>
                             </tr>
                        </tbody>
                 }
@@ -59,9 +59,7 @@
             }
             </table>
         }
-       
         <br/>
-
         <button type="submit" class="btn btn-primary form-control">Személyi adatok megváltoztatása</button>
 
     </EditForm>
@@ -94,8 +92,9 @@
         await PersonServices.DeletePersonAsync(Id);
         NavigationManager.NavigateTo("/");
     }
-    private async Task HandleDeleteRentalAsync()
+    private async Task HandleDeleteRentalAsync(int id)
     {
+        await RentalService.DeleteRentalAsync(id);
         NavigationManager.NavigateTo("/");
     }
 }

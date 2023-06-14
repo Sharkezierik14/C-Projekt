@@ -11,7 +11,7 @@ namespace LibrarianBlazor1.Services
 
         Task<Rental?> AddRentalAsync(int bookId, int MemberId);
 
-        Task<Rental?> DeleteRentalAsync(int id);
+        Task DeleteRentalAsync(int id);
 
     }
 }
