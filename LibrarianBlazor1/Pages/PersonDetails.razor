@@ -1,6 +1,7 @@
 ﻿@page "/person/{id:int}"
 @using Contracts
 @using Services
+@inject IBookServices BookServices
 @inject IPersonServices PersonServices
 @inject IRentalServices RentalService
 @inject NavigationManager NavigationManager
@@ -9,7 +10,7 @@
     <p>Loading...</p>
 }else
 {  
-    <h3>@Members.Name's details</h3>
+    <h3>@Members.Name' Adatai</h3>
     <EditForm Model="@Members" OnValidSubmit="@HandleValidSubmitAsync">
         <div class="mb-3">
             <label class="form-label">Name</label>
@@ -50,22 +51,29 @@
                                 {
                                     <td>@rental.ReturnDate.ToShortDateString()</td>
                                 }
+                                <td><button @onclick="@HandleDeleteRentalAsync" class="btn btn-danger form-control">Kölcsönzés Törlése</button></td>
                             </tr>
                        </tbody>
                 }
-            
+
             }
             </table>
         }
-        <button type="submit" class="btn btn-primary form-control">Edit</button>
-        <br>
+       
+        <br/>
+
+        <button type="submit" class="btn btn-primary form-control">Személyi adatok megváltoztatása</button>
+
     </EditForm>
-    <button @onclick ="@HandleDeleteAsync" class="btn btn-danger form-control">Delete</button>
+    <a href="NewRental/@Id" class="btn btn-secondary form-control">Új kölcsönzés hozzáadása</a>
+    <br />
+    <button @onclick ="@HandleDeleteAsync" class="btn btn-danger form-control">Személy törlése</button>
 }
 @code {
     [Parameter]
     public int Id { get; set; }
 
+    private IEnumerable<Book>? books { get; set; }
     private Member? Members { get; set; }
     private IEnumerable<Rental>? rentals { get; set; }
 
@@ -73,6 +81,7 @@
     {
         Members = await PersonServices.GetPersonByIdAsync(Id);
         rentals = await RentalService.GetAllRentalAsync();
+        books = await BookServices.GetAllBookAsync();
     }
 
     private async Task HandleValidSubmitAsync()
@@ -83,6 +92,10 @@
     private async Task HandleDeleteAsync()
     {
         await PersonServices.DeletePersonAsync(Id);
+        NavigationManager.NavigateTo("/");
+    }
+    private async Task HandleDeleteRentalAsync()
+    {
         NavigationManager.NavigateTo("/");
     }
 }

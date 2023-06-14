@@ -11,9 +11,21 @@ namespace LibrarianBlazor1.Services
             _httpClient = httpClient;
         }
 
-        public Task<Rental?> AddRentalAsync(int bookId, int MemberId)
+        public async Task<Rental?> AddRentalAsync(int bookId, int memberId)
         {
-            return null;
+            var requestUri = $"Rentals?bookId={bookId}&memberId={memberId}";
+            var response = await _httpClient.PostAsync(requestUri, null);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var createdRental = await response.Content.ReadFromJsonAsync<Rental>();
+                return createdRental;
+            }
+            else
+            {
+                // Kölcsönzés létrehozása sikertelen
+                return null;
+            }
         }
 
         public Task<IEnumerable<Rental>?> GetAllRentalAsync() =>

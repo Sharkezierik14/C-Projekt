@@ -9,8 +9,9 @@ namespace LibrarianBlazor1.Services
 
         Task<Rental?> GetRentalByRentalId(int id);
 
-        Task<Rental?> AddRentalAsync(int bookId, int MemberId);    
+        Task<Rental?> AddRentalAsync(int bookId, int MemberId);
 
+        Task<Rental?> DeleteRentalAsync(int id);
 
     }
 }

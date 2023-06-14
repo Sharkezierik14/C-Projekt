@@ -7,5 +7,6 @@ namespace LibrarianBlazor1.Services
         Task<IEnumerable<Book>?> GetAllBookAsync();
 
         Task<Book?> GetBookByIdAsync(int id);
+        
     }
 }

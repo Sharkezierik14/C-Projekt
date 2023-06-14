@@ -1,0 +1,50 @@
+﻿@page "/newrental/{id:int}"
+@using Contracts;
+@using Services
+@inject IPersonServices PersonServices
+@inject IBookServices BookServices
+@inject IRentalServices RentalService
+@inject NavigationManager NavigationManager
+@if (Books is null)
+{
+    <p>Loading...</p>
+}
+else
+{   <h3>Elérhető Könyvek Listája</h3>
+    <select class="form-control" @bind="selectedBookId">
+        <option value="">Válassz könyvet...</option>
+        @foreach (var book in Books)
+        {
+            var rented = rentals.Any(r => r.Book.Id == book.Id);
+            if (!rented)
+            {
+                <option value="@book.Id">@book.Title</option>
+            }
+            }
+    </select>
+    <br />
+    <button class="btn btn-primary" @onclick="CreateRental">Kölcsönzés létrehozása</button>
+
+}
+
+@code {
+    [Parameter]
+
+    public int Id { get; set; }
+
+    private IEnumerable<Book>? Books { get; set; }
+    private IEnumerable<Rental>? rentals { get; set; }
+
+    private int selectedBookId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await BookServices.GetAllBookAsync();
+        rentals = await RentalService.GetAllRentalAsync();
+    }
+    private async Task CreateRental()
+    {
+        await RentalService.AddRentalAsync(selectedBookId, Id);
+        NavigationManager.NavigateTo("/");
+    }
+}
