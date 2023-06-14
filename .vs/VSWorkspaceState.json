@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Contracts",
     "\\LibrarianBlazor1",
     "\\LibrarianBlazor1\\Pages",
     "\\LibrarianBlazor1\\Services"
   ],
-  "SelectedNode": "\\LibrarianBlazor1\\Pages\\RentalList.razor",
+  "SelectedNode": "\\Contracts\\Member.cs",
   "PreviewInSolutionExplorer": false
 }

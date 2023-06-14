@@ -1,0 +1,93 @@
+﻿@page "/"
+@using Contracts;
+@using Services
+@inject IPersonServices PersonServices
+@inject IRentalServices RentalService
+@inject IBookServices BookServices
+@if (Books is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>Books List</h3>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>YearOfPublication</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Publisher</td>
+                    <td>@book.YearOfPublication</td>
+                    <td><a href="Client/@book.Id">Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   <h3>Adja meg a keresni kivánt ügyfél nevét: </h3>
+   <input type="text" class="form-control" @bind="@searchedName" />
+   <br />
+    <h3>A kikölcsönzött könyvek Listája</h3>
+    
+    @if (!string.IsNullOrEmpty(searchedName))
+    {
+        var foundRentals = rentals.Where(rental => rental.Member.Name == searchedName)
+                                  .OrderByDescending(rental => rental.ReturnDate);
+
+        @if (foundRentals.Any())
+        {
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>YearOfPublication</th>
+                        <th>ReturnDate</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var rental in foundRentals)
+                    {
+                        <tr>
+                            <td>@rental.Book.Title</td>
+                            <td>@rental.Book.Author</td>
+                            <td>@rental.Book.Publisher</td>
+                            <td>@rental.Book.YearOfPublication</td>
+                            <td>@rental.ReturnDate</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>Nem található ilyen nevű felhasználó, kérem próbálkozzon újra</p>
+        }
+    }
+    
+
+
+}
+
+@code {
+    private IEnumerable<Book>? Books { get; set; }
+    private IEnumerable<Rental>? rentals { get; set; }
+    private string searchedName;
+    protected override async Task OnInitializedAsync()
+    {
+        Books = await BookServices.GetAllBookAsync();
+        rentals = await RentalService.GetAllRentalAsync();
+    }
+}
