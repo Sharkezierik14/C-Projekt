@@ -1820,19 +1820,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sárközi Erik\\.nuget\\packages\\": {}
+    "C:\\Users\\fefed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\LibrarianBlazor1\\LibrarianBlazor1.csproj",
+      "projectUniqueName": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\LibrarianBlazor1\\LibrarianBlazor1.csproj",
       "projectName": "LibrarianBlazor1",
-      "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\LibrarianBlazor1\\LibrarianBlazor1.csproj",
-      "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\LibrarianBlazor1\\obj\\",
+      "projectPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\LibrarianBlazor1\\LibrarianBlazor1.csproj",
+      "packagesPath": "C:\\Users\\fefed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\LibrarianBlazor1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fefed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1846,8 +1846,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj"
+            "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -1889,12 +1889,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.16, 6.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

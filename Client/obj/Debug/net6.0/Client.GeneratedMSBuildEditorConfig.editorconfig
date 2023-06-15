@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Client
 build_property.RootNamespace = Client
-build_property.ProjectDir = C:\Users\Sárközi Erik\source\repos\C-Projekt\Client\
+build_property.ProjectDir = C:\Users\fefed\Source\Repos\C-Projekt123\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Sárközi Erik\source\repos\C-Projekt\Client
+build_property.MSBuildProjectDirectory = C:\Users\fefed\Source\Repos\C-Projekt123\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/App.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/Pages/BooksDetails.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/Pages/BooksDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3NEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/Pages/ClientChechk.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/Pages/ClientChechk.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50Q2hlY2hrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/Shared/SurveyPrompt.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/_Imports.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/Shared/MainLayout.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ocnk4r8tjs
 
-[C:/Users/Sárközi Erik/source/repos/C-Projekt/Client/Shared/NavMenu.razor]
+[C:/Users/fefed/Source/Repos/C-Projekt123/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kd1ih0s86n

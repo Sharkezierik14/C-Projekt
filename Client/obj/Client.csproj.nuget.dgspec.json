@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\Client.csproj": {}
+    "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\Client.csproj": {
+    "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Client\\obj\\",
+        "projectPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\fefed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fefed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj"
+              "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -71,12 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.16, 6.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -91,17 +85,17 @@
         }
       }
     },
-    "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Sárközi Erik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sárközi Erik\\source\\repos\\C-Projekt\\Contracts\\obj\\",
+        "projectPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\fefed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fefed\\Source\\Repos\\C-Projekt123\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sárközi Erik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fefed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
