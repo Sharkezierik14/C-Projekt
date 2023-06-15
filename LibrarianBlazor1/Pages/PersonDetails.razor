@@ -95,6 +95,6 @@
     private async Task HandleDeleteRentalAsync(int id)
     {
         await RentalService.DeleteRentalAsync(id);
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo(NavigationManager.Uri);
     }
 }

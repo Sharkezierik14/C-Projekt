@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibrarianBlazor1", "LibrarianBlazor1\LibrarianBlazor1.csproj", "{A74C6D46-3836-411A-9C47-2EDB789A9592}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{C597C058-36E5-4948-814E-DC18DCF7A230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{C597C058-36E5-4948-814E-DC18DCF7A230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
